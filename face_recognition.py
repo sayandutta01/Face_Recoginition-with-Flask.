@@ -9,15 +9,15 @@ app=Flask(__name__)
 camera=cv2.VideoCapture(0)
 
 # Load a sample picture and learn how to recognize it.
-sayan_image = face_recognition.load_image_file("sayan/sayan.jpg")
+sayan_image = face_recognition.load_image_file("sayan.jpg")
 sayan_face_encoding = face_recognition.face_encodings(sayan_image)[0]
 
 # Load a second sample picture and learn how to recognize it.
-shameek_image = face_recognition.load_image_file("shameek/shameek.jpg")
+shameek_image = face_recognition.load_image_file("shameek.jpg")
 shameek_face_encoding = face_recognition.face_encodings(shameek_image)[0]
 
 # Load a second sample picture and learn how to recognize it.
-karfa_image = face_recognition.load_image_file("karfa/karfa.jpg")
+karfa_image = face_recognition.load_image_file("karfa.jpg")
 karfa_face_encoding = face_recognition.face_encodings(karfa_image)[0]
 
 # Create arrays of known face encodings and their names
